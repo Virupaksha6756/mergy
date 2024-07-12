@@ -1,9 +1,9 @@
-package JAVA_ACCENTURE;
+//MAXIMUM SUM CYCLE
 
 import java.util.Arrays;
 import java.util.HashSet;
 
-public class juspay11 {
+public class Main {
     static HashSet<Integer> cycle;
     public long largestSum(int[] Edge){
         long largest = -1;
@@ -59,14 +59,14 @@ public class juspay11 {
         return -1;
     }
     public static void main(String[] args) {
-        String sd = "";//4 4 1 4 13 8 8 8 0 8 14 9 15 11 -1 10 15 22 22 22 22 22 21
+        String sd = "4 4 1 4 13 8 8 8 0 8 14 9 15 11 -1 10 15 22 22 22 22 22 21";//4 4 1 4 13 8 8 8 0 8 14 9 15 11 -1 10 15 22 22 22 22 22 21
         String[] input = sd.split(" ");
         int[] Edge = new int[input.length];
         for(int i = 0; i < input.length;i++){
             Edge[i] = Integer.parseInt(input[i]);
         }
-        juspay11 h = new juspay11();
-        System.out.println(h.largestSum(Edge));
+        Main h = new Main();
+        System.out.println(h.largestSum(Edge));//Printing Maximum Sum Cycle
     }
 
 
